@@ -5,7 +5,7 @@ import Main from "./components/Main"
 
 export default function App() {
     const [darkMode, setDarkMode] = useState(false)
-
+    
     function toggleDarkMode() {
         setDarkMode(prevState => !prevState)
     }

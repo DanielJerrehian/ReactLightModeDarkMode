@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -33,7 +33,7 @@ nav.dark {
     background-color: #21222A;
 }
 
-.nav--logo_icon {
+.nav--logo-icon {
     width: 1.875rem;
     margin-right: 0.625rem;
 }
@@ -43,18 +43,33 @@ nav.dark {
     margin-right: auto;
 }
 
-.nav--title {
-    color: #DEEBF8;
+.nav-page-attributes {
+    display: flex;
+    align-items: center;
+    font-size: .75rem;
+    font-weight: 500;
+    margin-inline: 1rem;
+}
+
+.nav-page-attributes--window-width {
+    display: flex;
+    align-items: center;
+}
+
+.nav-page-attributes--window-width-button {
+    margin-right: 1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: .75rem;
 }
 
 .toggler {
     display: flex;
     align-items: center;
-}
-
-.toggler p {
-    font-size: .75rem;
-    font-weight: 600;
+    margin-inline: 1rem;
 }
 
 .toggler--slider {
@@ -71,20 +86,12 @@ nav.dark {
     box-sizing: content-box;
 }
 
-nav.dark .toggler--slider {
-    border-color: white;
-    background-color: #F5F5F5;
-}
 
 .toggler--slider--circle {
     height: 0.9375rem;
     width: 0.9375rem;
     background-color: white;
     border-radius: 50%;
-}
-
-nav.dark .toggler--slider--circle {
-    background-color: black;
 }
 
 .toggler--light {
@@ -95,11 +102,24 @@ nav.dark .toggler--light {
     color: #918E9B;
 }
 
+nav.dark .toggler--slider {
+    border-color: white;
+    background-color: #F5F5F5;
+}
+
+nav.dark .toggler--slider--circle {
+    background-color: black;
+}
+
 .toggler--dark {
     color: #D5D4D8;
 }
 
 nav.dark .toggler-dark {
+    color: #FFFFFF;
+}
+
+nav.dark .nav-page-attributes--window {
     color: #FFFFFF;
 }
 
